@@ -1,0 +1,14 @@
+conda create -n LN1 python=3.xx
+conda init
+conda activate LN1
+
+dgl:PyTorch-2.2.x CUDA-12.1 Package-pip OS-Linux
+# If you have installed dgl-cuXX package, please uninstall it first.
+pip install  dgl -f https://data.dgl.ai/wheels/torch-2.2/cu121/repo.html
+
+torch:2.2.1
+# CUDA 12.1
+pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cu121
+
+sklearn:
+pip install scikit-learn

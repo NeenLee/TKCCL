@@ -1,0 +1,10 @@
+Paper: Network Embedding-Based Approach for Detecting Collusive Spamming Groups on E-Commerce Platforms
+		Author: Jinbo Chao , 1,2 Chunhui Zhao , 1,2 and Fuzhi Zhang 1
+
+approach to dataset:
+
+Amazon review dataset [4, 31]: this dataset was crawled from Amazon.cn till August 20, 2012. It includes 1205125 ratings/reviews from 645072 reviewers on 136785 products, in which 5055 reviewers have labels indicating normal users or spammers. The ratings in this dataset are integers between 1 and 5, indicating how much users like the products they have evaluated, where 1 indicates disliked and 5 indicates most liked. For the convenience of experimental evaluation, we extract these 5055 reviewers with labels, their ratings on products, and their rating timestamps from the dataset to construct a sampled dataset. The sampled dataset contains 53777 ratings from 5055 reviewers on 17610 products,  which includes 3118 normal users and 1937 spammers.
+
+Yelp_Miami review dataset: in [32], the authors constructed a dataset to classify fake reviews by crawling business reviews in the consumer electronics domain in four American cities (i.e., New York, Los Angeles, Miami, and San Francisco) from Yelp.com till 2017. The reviews in this dataset were labeled as fake or not by Yelp’s antifraud filter, which can be treated as near ground truth. The reviewers corresponding to the fake or not reviews are considered as spammers or normal reviewers. Yelp_Miami review dataset is a subset of this dataset, which includes 3463 ratings from 3311 reviewers on 549 electronic businesses in the city of Miami. The ratings in the Yelp_Miami review dataset are integers between 1 and 5, where 1 indicates disliked and 5 indicates most liked. In the Yelp_Miami review dataset, there are 1394 spammers and 1917 normal reviewers
+
+在数据集中，"verified": True 和 "verified": False 通常用来表示评论或信息的真实性。True表示该评论或信息是经过验证的，即真实可靠的；而False表示该评论或信息可能未经过验证，真实性较低。
